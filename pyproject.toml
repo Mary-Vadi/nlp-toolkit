@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nlp-toolkit"
+version = "0.1.0"
+description = "Text cleaning, preprocessing and dataset preparation tools for NLP research"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Maryam Vadikheil" }]
+dependencies = [
+    "pandas>=1.5",
+    "scikit-learn>=1.2",
+    "matplotlib>=3.6",
+    "nltk>=3.8",
+]
+
+[project.optional-dependencies]
+lang = ["langdetect>=1.0.9"]
+dev = ["pytest>=7", "langdetect>=1.0.9"]
+
+[project.urls]
+Homepage = "https://github.com/Mary-Vadi/nlp-toolkit"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "src"]
+addopts = "--doctest-modules"
+pythonpath = ["src"]

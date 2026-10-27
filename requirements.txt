@@ -1,0 +1,6 @@
+pandas>=1.5
+scikit-learn>=1.2
+matplotlib>=3.6
+nltk>=3.8
+langdetect>=1.0.9
+pytest>=7

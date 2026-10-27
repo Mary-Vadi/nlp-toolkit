@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+
+# Environments
+.venv/
+venv/
+env/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Data: keep folders, ignore the actual data files
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Models and outputs
+*.pt
+*.bin
+*.safetensors
+outputs/
+wandb/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
