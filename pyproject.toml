@@ -7,7 +7,7 @@ name = "nlp-toolkit"
 version = "0.1.0"
 description = "Text cleaning, preprocessing and dataset preparation tools for NLP research"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.9" 
 license = { text = "MIT" }
 authors = [{ name = "Maryam Vadikheil" }]
 dependencies = [
